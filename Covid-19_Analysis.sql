@@ -19,7 +19,7 @@ ORDER BY 1, 2;
 -- Analyzing likelihood of death if contracting COVID
 SELECT Location, date, total_cases, total_deaths, (total_deaths / total_cases) * 100 AS DeathPercentage
 FROM death_data
-WHERE location LIKE '%states%'
+WHERE location LIKE 'United Kingdom'
   AND continent IS NOT NULL 
 ORDER BY 1, 2;
 
